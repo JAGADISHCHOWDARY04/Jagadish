@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Mannem Jagadishchowdary</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        header a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Me Section */
+        .about-me {
+            margin-bottom: 30px;
+        }
+
+        .about-me h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .about-me p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .about-me h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .about-me ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .about-me ul li {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Resume Section */
+        .resume h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .resume h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .resume ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .resume ul li {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .resume ul li strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Mannem Jagadishchowdary</h1>
+            <p>Mobile: <a href="tel:+917995322266">7995322266</a> | Email: <a href="mailto:jagadishchowdary78@gmail.com">jagadishchowdary78@gmail.com</a></p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>Professional Summary</h2>
+            <p>
+                I am a dedicated individual who completed my 10th standard in 2020 and graduated with a 
+                <strong>Diploma in Engineering</strong> from <strong>Nuzvid Polytechnic College</strong> in 2023.
+                During my academic career, I gained a solid foundation in programming, particularly in 
+                <strong>C</strong> and <strong>Python</strong>. I am eager to build on my skills and apply them in real-world challenges, with a strong interest in software development and problem-solving.
+            </p>
+            <h3>Key Skills</h3>
+            <ul>
+                <li><strong>C Programming</strong>: Knowledge of C, with experience in variables, functions, and algorithms.</li>
+                <li><strong>Python</strong>: Proficient in Python, focused on automation and scripting.</li>
+                <li><strong>Problem-Solving</strong>: Strong analytical skills and ability to break down complex problems into manageable tasks.</li>
+                <li><strong>Team Collaboration</strong>: Experienced in working with peers on group projects and collaborating effectively.</li>
+            </ul>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <ul>
+                <li><strong>10th Standard</strong>: B.V.N School, 2020</li>
+                <li><strong>Diploma in Engineering</strong>: Nuzvid Polytechnic College, 2023</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
