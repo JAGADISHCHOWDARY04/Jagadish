@@ -6,43 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Mannem Jagadishchowdary</title>
     <style>
-        /* Resetting default styles */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body & General Styles */
+        /* Body Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background: linear-gradient(to bottom right, #00b4d8, #0077b6);
             color: #333;
             line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            color: #333;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .container {
             width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
+            max-width: 1100px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 40px;
+            animation: fadeIn 1s ease-out;
         }
 
-        /* Header Styles */
+        /* Header Section */
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
             text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 30px;
             border-radius: 10px;
-            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         header p {
@@ -51,37 +61,55 @@
         }
 
         header a {
-            color: white;
+            color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
 
         header a:hover {
             text-decoration: underline;
         }
 
-        /* Section Styles */
+        /* Section Styling */
         section {
             margin-bottom: 40px;
         }
 
         .section-title {
-            font-size: 2em;
+            font-size: 2.2em;
             color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
             margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #4CAF50;
+            margin-top: 10px;
+            position: absolute;
+            left: 0;
         }
 
         .about-me, .skills, .education, .contact {
-            background-color: #fff;
-            padding: 20px;
+            background-color: #f4f4f9;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-me:hover, .skills:hover, .education:hover, .contact:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
 
         .about-me p, .skills ul, .education ul {
             font-size: 1.1em;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .skills ul {
@@ -90,7 +118,13 @@
         }
 
         .skills ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        .skills ul li::before {
+            content: "✓";
+            color: #4CAF50;
+            margin-right: 10px;
         }
 
         .contact a {
@@ -103,18 +137,25 @@
             text-decoration: underline;
         }
 
-        /* Footer */
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 40px;
+            background: #333;
+            color: #fff;
             border-radius: 8px;
+            font-size: 1.1em;
+            margin-top: 30px;
         }
 
         footer p {
             font-size: 1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         /* Responsive Design */
@@ -124,16 +165,17 @@
             }
 
             section {
-                margin-bottom: 30px;
+                margin-bottom: 25px;
             }
 
             .container {
-                width: 95%;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <!-- Header Section -->
         <header>
@@ -180,5 +222,6 @@
             <p>&copy; 2024 Mannem Jagadishchowdary. All Rights Reserved.</p>
         </footer>
     </div>
+
 </body>
 </html>
