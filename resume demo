@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,44 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Mannem Jagadishchowdary</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        /* Resetting default styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body & General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
             color: #333;
         }
 
-        /* Container */
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
         }
 
-        /* Header */
+        /* Header Styles */
         header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
         }
 
         header h1 {
             font-size: 2.5em;
-            margin: 0;
-            color: #333;
         }
 
         header p {
             font-size: 1.1em;
-            color: #555;
+            margin-top: 10px;
         }
 
         header a {
-            color: #4CAF50;
+            color: white;
             text-decoration: none;
         }
 
@@ -51,65 +59,77 @@
             text-decoration: underline;
         }
 
-        /* About Me Section */
-        .about-me {
-            margin-bottom: 30px;
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
         }
 
-        .about-me h2 {
+        .section-title {
             font-size: 2em;
             color: #4CAF50;
-            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        .about-me p {
+        .about-me, .skills, .education, .contact {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-me p, .skills ul, .education ul {
             font-size: 1.1em;
-            line-height: 1.6;
-            color: #555;
+            margin-top: 10px;
         }
 
-        .about-me h3 {
-            font-size: 1.5em;
-            color: #333;
-            margin-top: 20px;
-        }
-
-        .about-me ul {
-            list-style-type: disc;
+        .skills ul {
+            list-style: none;
             margin-left: 20px;
         }
 
-        .about-me ul li {
-            font-size: 1.1em;
-            color: #555;
+        .skills ul li {
+            margin-bottom: 8px;
         }
 
-        /* Resume Section */
-        .resume h2 {
-            font-size: 2em;
+        .contact a {
             color: #4CAF50;
-            margin-bottom: 15px;
-        }
-
-        .resume h3 {
-            font-size: 1.5em;
-            color: #333;
-            margin-top: 20px;
-        }
-
-        .resume ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .resume ul li {
+            text-decoration: none;
             font-size: 1.1em;
-            color: #555;
-            margin-bottom: 10px;
         }
 
-        .resume ul li strong {
-            color: #333;
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
@@ -123,31 +143,42 @@
 
         <!-- About Me Section -->
         <section class="about-me">
-            <h2>Professional Summary</h2>
-            <p>
-                I am a dedicated individual who completed my 10th standard in 2020 and graduated with a 
-                <strong>Diploma in Engineering</strong> from <strong>Nuzvid Polytechnic College</strong> in 2023.
-                During my academic career, I gained a solid foundation in programming, particularly in 
-                <strong>C</strong> and <strong>Python</strong>. I am eager to build on my skills and apply them in real-world challenges, with a strong interest in software development and problem-solving.
-            </p>
-            <h3>Key Skills</h3>
+            <h2 class="section-title">About Me</h2>
+            <p>I am a dedicated and passionate individual with a background in Engineering. I completed my 10th standard in 2020 and graduated with a Diploma in Engineering from Nuzvid Polytechnic College in 2023. I have a strong interest in programming and have gained proficiency in languages like C and Python. I am constantly learning and looking for opportunities to apply my skills in real-world projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
             <ul>
-                <li><strong>C Programming</strong>: Knowledge of C, with experience in variables, functions, and algorithms.</li>
-                <li><strong>Python</strong>: Proficient in Python, focused on automation and scripting.</li>
-                <li><strong>Problem-Solving</strong>: Strong analytical skills and ability to break down complex problems into manageable tasks.</li>
-                <li><strong>Team Collaboration</strong>: Experienced in working with peers on group projects and collaborating effectively.</li>
+                <li><strong>C Programming</strong>: Knowledge of C, including variables, functions, and algorithms.</li>
+                <li><strong>Python</strong>: Proficient in Python, particularly in scripting, automation, and problem-solving.</li>
+                <li><strong>Problem-Solving</strong>: Analytical mindset for breaking down complex problems into simple solutions.</li>
+                <li><strong>Team Collaboration</strong>: Ability to collaborate effectively in group projects, ensuring smooth workflow.</li>
             </ul>
         </section>
 
-        <!-- Resume Section -->
-        <section class="resume">
-            <h2>Resume</h2>
-            <h3>Education</h3>
+        <!-- Education Section -->
+        <section class="education">
+            <h2 class="section-title">Education</h2>
             <ul>
                 <li><strong>10th Standard</strong>: B.V.N School, 2020</li>
                 <li><strong>Diploma in Engineering</strong>: Nuzvid Polytechnic College, 2023</li>
             </ul>
         </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>If you'd like to connect with me for opportunities or collaborations, feel free to reach out through my email or phone number:</p>
+            <p>Email: <a href="mailto:jagadishchowdary78@gmail.com">jagadishchowdary78@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917995322226">7995322266</a></p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Mannem Jagadishchowdary. All Rights Reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
